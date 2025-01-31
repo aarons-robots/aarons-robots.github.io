@@ -47,12 +47,18 @@
             margin-top: 20px;
         }
 
-        video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
+	.video-container {
+    	    display: flex;
+    	    justify-content: center;
+    	    gap: 20px;
+    	    flex-wrap: wrap;
+    	}
+
+	video {
+	    width: 48%;
+	    max-width: 600px;
+	    border-radius: 8px;
+	}
 
         embed, iframe {
             width: 100%;
@@ -77,9 +83,20 @@ scenario, where environmental changes are introduced to disrupt the robot’s na
 mechanism that enables a robot under attack to recover and achieve its navigation goal.</p>
     	<h2>Video</h2>
     	<p>Check out our real-world demo video below:</p>
-    	<video controls>
-    		<source src="assets/videos/combine-couper-detect1-defence1-2024-10-24-13.30.04.mp4" type="video/mp4">
-    	</video>
+	<div class="video-container">
+    	    <div>
+        	<p>Attack:</p>
+        	<video controls>
+            	    <source src="assets/videos/couper-navigation-attack.mp4" type="video/mp4">
+        	</video>
+    	    </div>
+    	    <div>
+        	<p>Detection & Defense:</p>
+        	<video controls>
+            	    <source src="assets/videos/combine-couper-detect1-defence1-2024-10-24-13.30.04.mp4" type="video/mp4">
+	        </video>
+    	    </div>
+	</div>
     </div>
 </body>
 </html>
