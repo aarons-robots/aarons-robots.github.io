@@ -16,6 +16,15 @@
             min-height: 100vh;
             background-color: #f4f4f4;
         }
+        .page-title {
+            background-color: #004080;     /* 背景色 */
+            color: #fff;                   /* 字体色 */
+            padding: 12px 24px;            /* 内边距 */
+            border-radius: 6px;            /* 圆角 */
+            display: inline-block;         /* 宽度随内容 */
+            margin: 20px auto;             /* 居中并上下留白 */
+            text-align: center;
+        }
 	.paper-id {
     	    text-align: center;
 	}
@@ -73,7 +82,7 @@
 </head>
 <body>
     <div class="container">
-    	<h1>AARONS: Adversarial Attacks on Robot Navigation Systems</h1>
+    	<h1 class="page-title">AARONS: Adversarial Attacks on Robot Navigation Systems</h1>
     	<!--p class="paper-id">Paper ID: 7423</p-->
     	<h2>Abstract</h2>
     	<p>Mobile robots are becoming an integral part of everyday life. These systems typically rely on generating maps of the environment and using them for navigation. While significant progress has been made in improving the localization and navigation of mobile robots, their vulnerability to adversarial environment changes remains largely unexplored. This paper investigates the adversarial robustness of robot navigation systems and introduces attacks designed to manipulate the navigation environment with minimal modifications. Our proposed attack leverages vision-language models and pre-existing maps to identify objects whose repositioning could cause navigation errors. We also propose a defense mechanism to monitor the confidence of self-localization to detect changes in the environment and bypass attacked areas. Evaluations in simulated and real-world environments show that our attacks reduce the navigation success rate from 100% to 8.0% in the simulation and from 100% to 40.0% in the real world, while our defense mechanism increases the navigation success rate to 75.3% in simulation and 86.7% in the real world environment.</p>
