@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .page-title {
+            display: block;
+            width: 100%; 
+            background: url("assets/images/background.jpg")
+            center/cover no-repeat;
+            color: #FFF;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            padding: 50px 0;
+            border-radius: 6px;
+            margin: 20px 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+	.paper-id {
+    	    text-align: center;
+	}
+        .container {
+            text-align: left;
+            max-width: 1400px;
+            width: 90%;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+	h1, h2 {
+    	    text-align: center;
+    	}
+
+	p {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+	.video-container {
+    	    display: flex;
+    	    justify-content: center;
+    	    gap: 20px;
+    	    flex-wrap: wrap;
+    	}
+
+	video {
+	    width: 95%;
+	    max-width: 680px;
+	    height: auto;
+	    border-radius: 8px;
+	}
+
+        embed, iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .video-gallery {
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    gap: 8px;
+	    margin: 40px auto;
+	    max-width: 1200px;
+  	    width: 100%;
+	}
+
+	.video-gallery video {
+	    width: 100%;
+	    height: auto;
+	    border-radius: 6px;
+	    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+	
+	.video-item video {
+	    width: 100%;
+	    height: auto;
+  	    border-radius: 6px;
+  	    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+
+	.video-label {
+  	    margin-top: 8px;
+  	    font-size: 0.9rem;
+  	    color: #2C3E50;
+  	    text-align: center;
+	}
+	
+	.status {
+  	    font-weight: bold;
+  	    margin-right: 6px;
+	    font-size: 1.1em;
+	    vertical-align: middle;
+}
+
+	.status.success {
+	    color: #28a745; /* 绿色 */
+	}
+
+	.status.failure {
+	    color: #dc3545; /* 红色 */
+	}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    	<h1 class="page-title">AARONS: Adversarial Attacks on Robot Navigation Systems</h1>
+    	<!--p class="paper-id">Paper ID: 7423</p-->
+    	<h2>Abstract</h2>
+    	<p>Mobile robots are becoming an integral part of everyday life. These systems typically rely on generating maps of the environment and using them for navigation. While significant progress has been made in improving the localization and navigation of mobile robots, their vulnerability to adversarial environment changes remains largely unexplored. This paper investigates the adversarial robustness of robot navigation systems and introduces attacks designed to manipulate the navigation environment with minimal modifications. Our proposed attack leverages vision-language models and pre-existing maps to identify objects whose repositioning could cause navigation errors. We also propose a defense mechanism to monitor the confidence of self-localization to detect changes in the environment and bypass attacked areas. Evaluations in simulated and real-world environments show that our attacks reduce the navigation success rate from 100% to 8.0% in the simulation and from 100% to 40.0% in the real world, while our defense mechanism increases the navigation success rate to 75.3% in simulation and 86.7% in the real world environment.</p>
+    	<h2>Video</h2>
+    	<p>Please check out our real-world demo video below:</p>
+	<div class="video-container">
+    	    <div>
+        	<video controls>
+            	    <source src="assets/videos/aarons-demo-turtle-seg-bot.mp4" type="video/mp4">
+	        </video>
+    	    </div>
+	</div>
+
+	<p>More real-world demo videos are shown below:</p>
+	<p>1. Without attack, without defense:</p>
+	<div class="video-gallery">
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/noattacknodefence.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-21 01.43.18.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-12 20.15.32.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+    	</div>
+    	
+	<p>2. Whith attack, without defense:</p>
+	<div class="video-gallery">
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-09-10 13.45.01-nodefence-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Attack success ✔</span>
+    			</figcaption>
+  		</figure>	
+	
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-18 00.34.23-attack-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Attack success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.18.08-attack-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Attack success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.14.32.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status success">Attack success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-09-19 17.22.54-nodefense-failed.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status failure">Attack failed ✗</span>
+    			</figcaption>
+  		</figure>
+  		  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-21 01.04.14-attack-faulse.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				<span class="status failure">Attack failed ✗</span>
+    			</figcaption>
+  		</figure>
+
+    	</div>	
+	
+	<p>3. Whith attack, with defense:</p>
+	<div class="video-gallery">
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-15.58.40-defense-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-15.58.40-defense-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.23.05-defense-success.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-16.19.01-F.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Attack ineffective, defense not triggered<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.28.15-defense-faulse.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection failed, defense not triggered<br>
+    				<span class="status failure">Navigation failed ✗</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-24 15.16.25-defense-faulse.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+				Detection success, defense triggered but failed<br>
+    				<span class="status failure">Navigation failed ✗</span>
+    			</figcaption>
+  		</figure> 		
+    	</div>	
+	
+	<p>4. Whout attack, with defense:</p>
+	<div class="video-gallery">
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.31.34-tn.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection and defense not triggered (True Negative)<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.02.30-fp.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection and defense incorrectly triggered (False Positive)<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		
+    	</div>	
+
+    	<h2>Overview</h2>
+    	<img src="assets/images/Adversarial-robot-navigation.jpg" alt="Overview of an attack.">
+    	<p>This is an overview of an attack that leads to navigation error of a mobile robot through modifying its working environment. The green solid-lined box shows a normal navigation scenario in which the robot successfully reaches its goal. The red dashed box illustrates the attack scenario, where environmental changes are introduced to disrupt the robot’s navigation. The blue box on the right highlights our defense mechanism that enables a robot under attack to recover and achieve its navigation goal.</p>
+    	<h2>Results</h2>
+    	<img src="assets/images/success-comparison0430.jpg" alt="Overview of an attack.">
+    	<p>The Figure compares the navigation success rates of the robot under attack, with and without both detection and defense mechanisms. The figure shows that the navigation success rate increased from an average of 8.0% to 75.3% across all scenarios, which demonstrates the effectiveness of our detection and defense mechanism..</p>
+    </div>
+</body>
+</html>
+
