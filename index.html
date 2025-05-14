@@ -84,7 +84,7 @@
         }
         .video-gallery {
 	    display: grid;
-	    grid-template-columns: repeat(5, 1fr);
+	    grid-template-columns: repeat(3, 1fr);
 	    gap: 8px;
 	    margin: 40px auto;
 	    max-width: 1200px;
@@ -145,189 +145,181 @@
     	    </div>
 	</div>
 
-    	<div class="video-gallery">
+	<p>More real-world demo videos are shown below:</p>
+	<p>1. Without attack, without defense:</p>
+	<div class="video-gallery">
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-15.58.40-defense-success.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/noattacknodefence.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-16.19.01-F.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-21 01.43.18.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.23.05-defense-success.mp4" type="video/mp4">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-12 20.15.32.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
+    	</div>
+    	
+	<p>2. Whith attack, without defense:</p>
+	<div class="video-gallery">
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-23 16.19.24-attack-faulse.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-09-10 13.45.01-nodefence-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Attack success ✔</span>
     			</figcaption>
-  		</figure>
+  		</figure>	
+	
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.28.15-defense-faulse.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status failure">✗</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.25.36-detection-faulse.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status failure">✗</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-24 15.16.25-defense-faulse.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status failure">✗</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-23 16.27.11-defense-faulse.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, with defense
-    				<span class="status failure">✗</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.31.34-tn.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				without attack, with defense
-    				<span class="status success">✔</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.02.30-fp.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				without attack, with defense
-    				<span class="status success">✔</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
+    			<video loop muted controls>
     	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-18 00.34.23-attack-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status success">✔</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.18.08-attack-success.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status success">✔</span>
-    			</figcaption>
-  		</figure>
-    		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-21 01.04.14-attack-faulse.mp4" type="video/mp4">
-    			</video>
-    			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Attack success ✔</span>
     			</figcaption>
   		</figure>
 
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-27 13.41.24-attack-success.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.18.08-attack-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Attack success ✔</span>
     			</figcaption>
   		</figure>
+
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
+    			<video loop muted controls>
     				<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.14.32.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status success">✔</span>
+    				<span class="status success">Attack success ✔</span>
     			</figcaption>
   		</figure>
+  		
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/segbot-attack/2025-03-20 14.08.13-attack-faulse.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-09-19 17.22.54-nodefense-failed.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status failure">✗</span>
+    				<span class="status failure">Attack failed ✗</span>
     			</figcaption>
   		</figure>
+  		  		
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-02-20 17.21.31-attack-faulse.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/segbot-attack/2025-03-21 01.04.14-attack-faulse.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				with attack, without defense
-    				<span class="status failure">✗</span>
+    				<span class="status failure">Attack failed ✗</span>
     			</figcaption>
   		</figure>
+
+    	</div>	
+	
+	<p>3. Whith attack, with defense:</p>
+	<div class="video-gallery">
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-27 13.56.12.mp4" type="video/mp4">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-15.58.40-defense-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				without attack, without defense
-    				<span class="status success">✔</span>
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
+  		
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    	  			<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-21 01.43.18.mp4" type="video/mp4">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-15.58.40-defense-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				without attack, without defense
-    				<span class="status success">✔</span>
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
+  		
     		<figure class="video-item">
-    			<video loop autoplay muted playsinline>
-    				<source src="assets/videos/video-gallery/segbot-no-attack/2025-03-12 20.15.32.mp4" type="video/mp4">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.23.05-defense-success.mp4" type="video/mp4">
     			</video>
     			<figcaption class="video-label">
-    				without attack, without defense
-    				<span class="status success">✔</span>
+    				Detection success and defense success
+    				<span class="status success">Navigation success ✔</span>
     			</figcaption>
   		</figure>
-    	</div>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30-16.19.01-F.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Attack ineffective, defense not triggered<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-30 15.28.15-defense-faulse.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection failed, defense not triggered<br>
+    				<span class="status failure">Navigation failed ✗</span>
+    			</figcaption>
+  		</figure>
+  		
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-attack-elevator/2024-10-24 15.16.25-defense-faulse.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+				Detection success, defense triggered but failed<br>
+    				<span class="status failure">Navigation failed ✗</span>
+    			</figcaption>
+  		</figure> 		
+    	</div>	
+	
+	<p>4. Whout attack, with defense:</p>
+	<div class="video-gallery">
+    		<figure class="video-item">
+    			<video loop muted controls>
+    	  			<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.31.34-tn.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection and defense not triggered (True Negative)<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+
+    		<figure class="video-item">
+    			<video loop muted controls>
+    				<source src="assets/videos/video-gallery/turtlebot-noattack-elevator/2024-11-06 15.02.30-fp.mp4" type="video/mp4">
+    			</video>
+    			<figcaption class="video-label">
+    				Detection and defense incorrectly triggered (False Positive)<br>
+    				<span class="status success">Navigation success ✔</span>
+    			</figcaption>
+  		</figure>
+  		
+    		
+    	</div>	
+
     	<h2>Overview</h2>
     	<img src="assets/images/Adversarial-robot-navigation.jpg" alt="Overview of an attack.">
     	<p>This is an overview of an attack that leads to navigation error of a mobile robot through modifying its working environment. The green solid-lined box shows a normal navigation scenario in which the robot successfully reaches its goal. The red dashed box illustrates the attack scenario, where environmental changes are introduced to disrupt the robot’s navigation. The blue box on the right highlights our defense mechanism that enables a robot under attack to recover and achieve its navigation goal.</p>
